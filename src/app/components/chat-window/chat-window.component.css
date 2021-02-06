@@ -1,0 +1,146 @@
+.main {
+    background: var(--background);
+    color: var(--on-background);
+    text-align: left;
+    position: relative;
+}
+
+.innerdiv {
+    background: var(--primary);
+    color: var(--on-primary);
+}
+
+.chat-box-body {
+    font-family: 'Roboto';
+    position: relative;
+    overflow: hidden;
+    background-color: #ebe9e93b;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    height: 25em;
+}
+
+
+/* CSS talk bubble */
+
+.talk-bubble {
+    font-family: 'Roboto-Medium';
+    display: block;
+    position: relative;
+    border-radius: 9px 9px 0px 9px;
+    height: auto;
+    background-color: #4e4e50;
+    color: #f1f1f1;
+    float: right;
+}
+
+.border {
+    border: 8px solid #666;
+}
+
+.round {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+}
+
+
+/* talk bubble contents */
+
+.talktext {
+    padding: 10px;
+}
+
+.talktext p {
+    /* remove webkit p margins */
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+
+/*Right triangle, placed bottom right side slightly in*/
+
+.tri-right.border.btm-right:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -8px;
+    bottom: -40px;
+    border: 20px solid;
+    border-color: #666 #666 transparent transparent;
+}
+
+.tri-right.btm-right:after {
+    left: auto;
+    bottom: -9px;
+    border: 6px solid;
+    border-color: #4e4e50 #4e4e50 transparent transparent;
+    border-left: 6px solid transparent;
+    content: "";
+    position: absolute;
+    right: 0px;
+}
+/* 
+
+.chat-history {
+    padding: 30px 30px 20px;
+    border-bottom: 2px solid white;
+    overflow-y: scroll;
+    height: 575px;
+} 
+.message-data {
+    margin-bottom: 15px;
+  }
+      
+  .message-time {
+    color: grey;
+    padding-left: 6px;
+    font-style: italic;
+  }
+  
+  .message-text {      
+    padding: 8px 14px;
+    font-size: 13px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .message-text:after {
+    top: 100%;
+    left: 7%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-width: 10px;
+    margin-left: -10px;
+  }
+  
+  
+  .rcvd-text{
+    background: #cecece;
+    border-radius: 8px; 
+    -webkit-border-radius: 8px; 
+    -moz-border-radius: 8px; 
+    color: #323232;
+  }
+  
+  .sent-text{
+    background: #5a5a5a;
+    border-radius: 8px; 
+    -webkit-border-radius: 8px; 
+    -moz-border-radius: 8px; 
+    color: white;
+  }
+  
+    .sent-text :after {
+      border-top-color:#5a5a5a;
+      right: 5px;
+      left: auto;
+    }
+   */

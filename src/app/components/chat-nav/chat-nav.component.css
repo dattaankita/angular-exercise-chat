@@ -1,0 +1,87 @@
+.main {
+    background: var(--background);
+    color: var(--on-background);
+    text-align: left;
+    position: relative;
+}
+
+.innerdiv {
+    background: var(--primary);
+    color: var(--on-primary);
+}
+
+
+h1 {
+    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mat-toolbar {
+    /* background-color: white; */
+    font-family: 'Roboto-Black';
+    height: 2.2em;
+}
+
+.fill-remaining-space {
+    flex: 1 1 auto;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: 11px;
+    margin: 0 5px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: darkslateblue;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.chat-window-minimise {
+    float: right;
+    cursor: pointer;
+}

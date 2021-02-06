@@ -1,0 +1,47 @@
+<mat-toolbar class="innerdiv">
+    <span class="fill-remaining-space">
+            <h1>
+                Watson Assistant
+            </h1>
+        </span>
+    <button mat-icon-button [matMenuTriggerFor]="settings">
+            <mat-icon>menu</mat-icon>
+        </button>
+    <mat-menu #settings="matMenu" [overlapTrigger]="false">
+        <button mat-menu-item>
+                <mat-icon>chat</mat-icon>
+                <span>Chat Transcript</span>
+            </button>
+        <button mat-menu-item>
+                <mat-icon>wb_incandescent</mat-icon>
+                <span>Toggle: </span>
+                <span>Light</span>
+                <label class="switch">
+                    <input type="checkbox" (click)="toggle()">
+                    <span class="slider round"></span>
+                </label>
+                <span>Dark</span>
+            </button>
+        <button mat-menu-item [matMenuTriggerFor]="fontsize">
+                <mat-icon>text_format</mat-icon>
+                <span>Font Size</span>
+            </button>
+    </mat-menu>
+    <mat-menu #fontsize="matMenu">
+        <button mat-menu-item (click)="decreaseFontSize()">
+                <mat-icon>format_size</mat-icon>
+                <span><b> - </b>Decrease<b> - </b></span>
+            </button>
+        <button mat-menu-item (click)="increaseFontSize()">
+                <mat-icon>format_size</mat-icon>
+                <span> <b> + </b>Increase<b> + </b> </span>
+            </button>
+        <button mat-menu-item (click)="resetFontSize()">
+                <mat-icon>format_size</mat-icon>
+                <span> Reset</span>
+            </button>
+    </mat-menu>
+    <span class="chat-window-minimise" (click)="closeForm()">
+            <mat-icon>minimize</mat-icon>
+        </span>
+</mat-toolbar>

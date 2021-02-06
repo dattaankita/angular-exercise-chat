@@ -1,0 +1,29 @@
+<!-- <div class="innerdiv">
+    <div class="chat-form container">
+        <form (ngSubmit)="sendChatMessage()" #emailForm="ngForm">
+            <div class="chat-message field">
+                <input type="text" placeholder="Ask me anything!" class="chat-input" required name="chatMessage" [(ngModel)]="chatMessage" #chatMessageCtrl="ngModel" />
+
+                <button class="chat-send" [disabled]="chatMessageCtrl.invalid" (click)="onSend(chatMessage)">
+                    <mat-icon>send</mat-icon>
+            </button>
+            </div>
+        </form>
+    </div>
+</div> -->
+
+<div class="innerdiv">
+    <div class="chat-input">
+      <form>
+        <div class="chat-message">
+          <input type="text" placeholder="Type something..." [(ngModel)]="message.content" name="msg" class="chat-text"
+            id="chat-input" required />
+          <button type="submit" class="chat-send" id="chat-submit" (click)="sendCode()">
+            <mat-icon>send</mat-icon>
+
+          </button>
+
+        </div>
+      </form>
+    </div>
+  </div>

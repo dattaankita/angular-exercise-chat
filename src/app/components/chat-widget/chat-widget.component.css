@@ -1,0 +1,15 @@
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-chat{
+    position: fixed;
+    border: none;
+    bottom: 75px;
+    right: 70px;
+    background: blue;
+    color: white;
+    cursor: pointer;
+    transform: scale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }

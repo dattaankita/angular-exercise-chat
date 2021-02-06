@@ -1,0 +1,19 @@
+<div [ngStyle]="{'font-size.em': bubbleSize }">
+  <div *ngFor="let chat of messageList">
+
+    <div class="message-data">
+      <span class="message-time">Today: {{chat.timestamp | date : 'dd/MM/yyyy' }}</span> &nbsp; &nbsp;
+    </div>
+    <div [ngClass]="{
+      'rcvd-text': chat.isResponseText,
+      'sent-text':!chat.isResponseText
+       }">
+
+
+      <div class="message-text">
+        {{chat.content}}
+      </div>
+
+    </div>
+  </div>
+</div>

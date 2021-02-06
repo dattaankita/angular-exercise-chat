@@ -1,0 +1,32 @@
+<div class="main">
+    <div class="chat-box-body">
+        <div class="chat-box-overlay" [ngStyle]="{'font-size.em': overlaySize}">
+            <p>
+                Hello! I am a demo virtual conversational assistant. I am trained to answer your questions.
+            </p>
+        </div>
+        <div class="chat-logs" [ngStyle]="{'font-size.em': bubbleSize }">
+            <div class="talk-bubble tri-right btm-right">
+                <div class="talktext">
+                    <p> How can I help you today?</p>
+                </div>
+            </div>
+        </div>
+        <app-chat-room></app-chat-room>
+    </div>
+</div>
+
+<!-- <div class="chat-history">
+            <div class="message-data align-right">
+                <span class="message-data-time">Today</span> &nbsp; &nbsp;
+            </div>
+            <div class="message other-message float-right">
+                SENT MESSAGE
+            </div>
+            <div class="message-data">
+                <span class="message-data-time"> Today</span>
+            </div>
+            <div class="message my-message">
+                RECEIVED MESSAGE
+            </div>
+        </div> -->

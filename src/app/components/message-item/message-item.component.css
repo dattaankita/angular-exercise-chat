@@ -1,0 +1,54 @@
+
+.message-data {
+  margin-bottom: 15px;
+}
+    
+.message-time {
+  color: grey;
+  padding-left: 6px;
+  font-style: italic;
+}
+
+.message-text {      
+  /* color: white; */
+  padding: 8px 14px;
+  font-size: 13px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.message-text:after {
+  top: 100%;
+  left: 7%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+
+.rcvd-text{
+  background: #cecece;
+  border-radius: 8px; 
+  -webkit-border-radius: 8px; 
+  -moz-border-radius: 8px; 
+  color: #323232;
+}
+
+.sent-text{
+  background: #5a5a5a;
+  border-radius: 8px; 
+  -webkit-border-radius: 8px; 
+  -moz-border-radius: 8px; 
+  color: white;
+}
+
+  .sent-text :after {
+    border-top-color:#5a5a5a;
+    right: 5px;
+    left: auto;
+  }
